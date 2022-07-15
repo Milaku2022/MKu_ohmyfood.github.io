@@ -1,0 +1,62 @@
+/* variables colors */
+:root {
+    --purple: #9356DC;
+    --pink: #FF79DA;
+    --green: #99E2D0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-family: 'Shrikhand', cursive;
+}
+
+header
+
+.formulaire{
+    display: flex;
+    height: 50px;
+    background-color: rgb(226, 225, 225);
+    }
+input{
+    font-size: large;
+    font-weight: 400;
+    color: black;
+    border: none;
+    margin-left: 10px;
+    background-color: rgb(226, 225, 225);
+}
+::placeholder{
+    color:black;
+    }
+.loc{
+    font-size: larger;
+    padding-top: 13px;
+}
+/* mobil first */
+@media screen and (max-width:576px) {
+
+header{
+    text-align: center;
+    padding-top: 25px;  
+}
+.Logo{
+    padding-bottom: 25px;
+}  
+.formulaire{
+    width: 100%;
+    justify-content: center;
+    
+}
+input{
+
+}
+
+
+}
