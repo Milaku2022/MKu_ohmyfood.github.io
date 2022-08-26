@@ -1,0 +1,134 @@
+.btn-calltoaction {
+    background: linear-gradient($color-secondary, $color-primary);
+    padding: 15px 20px 15px 20px;
+    @include typo-buttons(18px, 500, white);
+    border-radius: 30px;
+    border: none;
+    box-shadow: $box-shadow;
+    min-width: 200px;
+
+    a {
+        color: white;
+    }
+
+    &:hover {
+        background: $background-hover;
+        box-shadow: $box-shadow-hover;
+    }
+
+}
+
+.fonction__bouttons {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+
+.btn-choix {
+    @include flexbox(flex, center, center);
+    padding: 20px 20px 20px 40px;
+    border-radius: 25px;
+    // width: 100%;
+    flex: 1;
+    @include typo-buttons(18px, 700, black);
+    border: none;
+    box-shadow: $box-shadow;
+
+    &__icon {
+        margin-right: 15px;
+        color: grey;
+    }
+
+    &:hover {
+        background-color: $color-hover;
+        box-shadow: $box-shadow-hover;
+
+        i {
+            color: $color-primary;
+        }
+    }
+}
+
+// boutons des menus//
+.BouttonMenu {
+    width: 350px;
+    display: flex;
+    margin-bottom: 20px;
+   
+
+    .btnmenu {
+        width: 350px;
+        border-radius: 20px;
+        box-shadow: $box-shadow;
+        padding: 10px 20px 10px 10px;
+
+
+        &__title {
+            @include typo__title(20px, 700);
+            margin-bottom: 10px;
+        }
+        p{
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        &__ingrédients {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        &__ingrédients-noms {
+            @include typo__title(17px, 300);
+            text-overflow: ellipsis;
+
+        }
+
+        &__ingrédients-prix {
+            @include typo__title(17px, 600)
+        }
+    }
+
+
+    .btnCheck {
+
+        // width: 0%;
+        background-color: $color-tercio;
+        padding: 0;
+        // transition: all .2s;
+        border-radius: 0 20px 20px 0;
+        i{
+            font-size: 0px;
+        }
+    }
+
+    &:hover {
+        .btnmenu {
+            width: 80%;
+            border-radius: 20px 0 0 20px;
+        }
+
+        .btnCheck {
+            
+            border-radius: 0 20px 20px 0;
+            width: 20%;
+            // background-color: $color-tercio;
+            text-align: center;
+            padding: 24px;
+            font-size: large;
+           
+            i {
+                color: white;
+                font-size: 25px;
+                transform: rotate(-1turn);
+                transition: transform 500ms ease-in-out;
+            }
+        }
+    }
+
+
+
+}

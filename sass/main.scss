@@ -1,6 +1,25 @@
 @import "./Base/variables";
 @import "./Util/mixins";
 @import "./Layout/header";
+@import "./Layout/forms";
+@import "./Base/typography";
+@import "./Components/buttons";
+@import "./Layout/footer";
+@import "./Pages/home";
+@import "./Pages/menualafrançaise";
+@import "./Util/animate";
 
 
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+ 
+
+body{background: black;}

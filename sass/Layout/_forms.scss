@@ -1,0 +1,18 @@
+.form{
+    @include flexbox(flex, center, center);
+    @include padding(15px, 15px, 0, 0);
+    background-color: rgb(243, 235, 235);
+    &__icon {
+        padding-right: 10px;
+    }
+    &__placeholder {
+        border: none;
+        background-color: transparent;
+        font-size: medium;
+        font-weight: 700;
+        color: black;
+        width: 150px;
+
+    }
+   
+}

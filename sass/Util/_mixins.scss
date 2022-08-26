@@ -4,3 +4,27 @@
     align-items: $align-items;
     
 }
+@mixin padding( $padding-top, $padding-bottom, $padding-right, $padding-left){
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+    padding-right: $padding-right;
+    padding-left: $padding-left;
+}
+@mixin typo__title($font-size, $font-weight){
+    font-family: 'Roboto', sans-serif;
+    font-size: $font-size;
+    font-weight: $font-weight;    
+}
+
+@mixin typo-buttons($font-size, $font-wheight, $color){
+    font-family: 'Roboto', sans-serif;
+    font-size: $font-size;
+    font-weight: $font-wheight;
+    color: $color;
+}
+
+@mixin typo-logo($font-size, $color){
+    font-family: 'Shrikhand', cursive;
+    font-size: $font-size;
+    color: $color;
+}

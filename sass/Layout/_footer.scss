@@ -1,0 +1,29 @@
+.footer{
+    background-color: black;
+    padding:20px;
+    &__logo{
+        @include typo-logo(20px, white);
+        margin-bottom: 10px;
+    }
+    &__proposer{
+        display: flex;
+        @include typo-buttons(16px, 400, white);
+        &-icon{
+            font-size: 11px;
+            margin-right: 10px;
+            vertical-align: 1px;
+        }
+        &-icon2{
+            font-size: 9px;
+            margin-right: 9px;
+            vertical-align: 2px;
+        }
+    
+    }
+    &__légal{
+        @include typo-buttons(16px, 400, white);
+        a{
+            color:white;
+        }
+    }
+}

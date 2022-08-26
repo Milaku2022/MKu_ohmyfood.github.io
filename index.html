@@ -8,7 +8,9 @@
     <title>Ohmyfood</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">            
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://kit.fontawesome.com/0832316b28.js" crossorigin="anonymous"></script>
 </head>
@@ -16,20 +18,116 @@
 <body>
     <header class="header">
         <div class="header__logo"><img src="./images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood"></div>
-        <form class="formulaire">
-            <p><i class="fa-solid fa-location-dot loc"></i></p>
-            <input type="text" placeholder="Paris, Belleville">
-        </form>
     </header>
 
+    <form class="form">
+        <p class="form__icon"><i class="fa-solid fa-location-dot loc"></i></p>
+        <input class="form__placeholder" type="text" placeholder="Paris, Belleville">
+    </form>
 
+    <div class="resa">
+        <h1 class="resa__title">Réservez le menu qui vous convient</h1>
+        <p class="resa__slogan">Découvrez des restaurants d'exception, selectionnés par nos soins.</p>
+        <button class="res__button btn-calltoaction"><a href="#">Explorer nos restaurants</a></button>
+    </div>
 
+    <div class="fonction">
+        <h2 class="resa__title">Fonctionnement</h2>
+        <div class="fonction__bouttons"><a href="#" class="fonction__bouttons">
+                <button class="btn-choix">
+                    <p><i class="fa-solid fa-mobile-screen-button btn-choix__icon"></i></p>
+                    <p class="btn-choix__text">Choisissez un restaurant</p>
+                </button>
+                <!-- pastille numéro -->
+                <div class="fonction__bouttons__numero">1</div>
+            
+                
+        </div></a>
+        <div class="fonction__bouttons"><a href="#" class="fonction__bouttons">
+                <button class="btn-choix">
+                    <p><i class="fa-solid fa-list btn-choix__icon"></i></p>
+                    <p class="btn-choix__text">Composez votre menu</p>
+                </button>
+                <div class="fonction__bouttons__numero">2</div>
+        </div></a>
+        <div class="fonction__bouttons"><a href="#" class="fonction__bouttons">
+                <button class="btn-choix">
+                    <p><i class="fa-solid fa-store btn-choix__icon"></i></p>
+                    <p class="btn-choix__text">Dégustez au restaurant</p>
+                </button>
+                <div class="fonction__bouttons__numero">3</div>
+        </div></a>
 
-
-
-
-
-
+    </div>
+    <div class="Restaurants fonction">
+        <h2 class="resa__title">Restaurants</h2>
+        <div class="cardresto"><a href="#">
+                <div class="cardresto__photo"><img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                        alt="photo d'un plat bien présenté sur une table.">
+                    <div class="nouveau">Nouveau</div>
+                </div>
+                <div class="cardresto__étiquette">
+                    <div class="cardresto__texte">
+                        <div class="cardresto__title">La palette du goût</div>
+                        <div class="cardresto__lieu">Ménilmontant</div>
+                    </div>
+                    <p class="cardresto__étiquette-jaime"><i class="fa-solid fa-heart"></i></i></p>
+                </div>
+            </a></div>
+        <div class="cardresto"><a href="./lanoteenchantée.html">
+                <div class="cardresto__photo"><img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                        alt="photo d'un plat bien présenté sur une table.">
+                    <div class="nouveau">Nouveau</div>
+                </div>
+                <div class="cardresto__étiquette">
+                    <div class="cardresto__texte">
+                        <div class="cardresto__title">La note enchantée</div>
+                        <div class="cardresto__lieu">Charonne</div>
+                    </div>
+                    <p class="cardresto__étiquette-jaime"><i class="fa-solid fa-heart"></i></p>
+                </div>
+            </a></div>
+        <div class="cardresto"><a href="./menu_alafrancaise.html">
+                <div class="cardresto__photo"><img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                        alt="photo d'un plat bien présenté sur une table.">
+                </div>
+                <div class="cardresto__étiquette">
+                    <div class="cardresto__texte">
+                        <div class="cardresto__title">À la française</div>
+                        <div class="cardresto__lieu">Cité Rouge</div>
+                    </div>
+                    <p class="cardresto__étiquette-jaime"><i class="fa-solid fa-heart"></i></p>
+                </div>
+            </a></div>
+        <div class="cardresto"><a href="#">
+                <div class="cardresto__photo"><img
+                        src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                        alt="photo d'un plat bien présenté sur une table.">
+                </div>
+                <div class="cardresto__étiquette">
+                    <div class="cardresto__texte">
+                        <div class="cardresto__title">Le délice des sens</div>
+                        <div class="cardresto__lieu">Folie-Méricourt</div>
+                    </div>
+                    <p class="cardresto__étiquette-jaime"><i class="fa-solid fa-heart"></i></p>
+                </div>
+            </a></div>
+    </div>
+    <footer class="footer">
+        <p class="footer__logo">ohmyfood</p>
+        <div class="footer__proposer">
+            <p><i class="fa-solid fa-utensils footer__proposer-icon"></i></p>
+            <p>Proposer un restaurant</p>
+        </div>
+        <div class="footer__proposer">
+            <p><i class="fa-solid fa-handshake-angle footer__proposer-icon2"></i></p>
+            <p>Devenir partenaire</p>
+        </div>
+        <div class="footer__légal">
+            <p>Mentions légales</p>
+            <p><a href="mailto:">Contact</a></p>
+        </div>
+    </footer>
 </body>
 
 </html>

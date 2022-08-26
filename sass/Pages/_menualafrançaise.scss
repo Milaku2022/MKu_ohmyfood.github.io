@@ -1,0 +1,59 @@
+.header-menu{
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    &__return{
+        width: 30%;        
+        font-size: 25px;
+        margin-left: 20px;
+        i{
+            color:black;
+        }
+    }
+    &__logo{
+        width: 70%;
+    }
+}
+
+.photo{ 
+    display:flex;
+    flex-direction: column;
+    width: 100%;    
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .menu{
+        margin-top: -40px;
+        width: 100%;
+        border-radius: 40px;        
+        background-color: $background-color-fond-gris;
+        padding: 20px;
+        &__title{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            &-nom{
+                @include typo-logo(30px, black);
+            }
+            i{
+                padding-top: 7px;
+            }
+            }
+        &__h3{
+            width: 50px;
+            padding-bottom: 10px;
+            @include typo__title(20px, 300);
+            border-bottom: 3px solid $color-tercio;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }    
+        }
+        
+    }
+
+.commander{
+    @include flexbox(flex, center, center);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}

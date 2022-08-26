@@ -1,7 +1,6 @@
 .header{
     @include flexbox(flex, center, center);
-    &__logo{
-        
-    }
-
+    @include padding(30px, 30px, 0, 0);
+   
+    
 }

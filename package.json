@@ -1,19 +1,24 @@
 {
-  "name": "installation",
+  "name": "resinstal",
   "version": "16.16.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/styles.css"
+    "sass": "sass --watch sass/main.scss:css/styles.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Milaku2022/MKu_ohmyfood.github.io.git"
   },
-  "author": "",
+  "author": "Mila",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Milaku2022/MKu_ohmyfood.github.io/issues"
   },
-  "homepage": "https://github.com/Milaku2022/MKu_ohmyfood.github.io#readme"
+  "homepage": "https://github.com/Milaku2022/MKu_ohmyfood.github.io#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "sass": "^1.54.5"
+  },
+  "devDependencies": {},
+  "description": ""
 }
