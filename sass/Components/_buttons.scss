@@ -58,33 +58,45 @@
     width: 350px;
     display: flex;
     margin-bottom: 20px;
-   
+    // background-color: black;
+    border-radius: 20px;
+        box-shadow: $box-shadow;
+        overflow: hidden;
+        animation-duration: 3s;
+        animation-name: slowly;   
 
     .btnmenu {
-        width: 350px;
-        border-radius: 20px;
-        box-shadow: $box-shadow;
-        padding: 10px 20px 10px 10px;
+        padding: 10px;
+        flex: 1;
+        width: 80%;
+
+
+       
 
 
         &__title {
             @include typo__title(20px, 700);
             margin-bottom: 10px;
         }
-        p{
-            white-space: nowrap;
+        p{ white-space: nowrap;
             overflow: hidden;
+           
+           
+
         }
         &__ingrédients {
             display: flex;
             justify-content: space-between;
             
+            
         }
 
         &__ingrédients-noms {
             @include typo__title(17px, 300);
+            -webkit-line-clamp: 1;
             text-overflow: ellipsis;
-
+           
+           
         }
 
         &__ingrédients-prix {
@@ -94,12 +106,17 @@
 
 
     .btnCheck {
-
-        // width: 0%;
+        display: flex;
+    
         background-color: $color-tercio;
-        padding: 0;
-        // transition: all .2s;
+        transition:  .5s;
         border-radius: 0 20px 20px 0;
+    
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+    margin-right: -80px;
+        
         i{
             font-size: 0px;
         }
@@ -107,19 +124,19 @@
 
     &:hover {
         .btnmenu {
-            width: 80%;
+           
             border-radius: 20px 0 0 20px;
         }
 
         .btnCheck {
             
             border-radius: 0 20px 20px 0;
-            width: 20%;
-            // background-color: $color-tercio;
-            text-align: center;
-            padding: 24px;
-            font-size: large;
+            
            
+            text-align: center;
+           margin-right: 0;
+            font-size: large;
+            transition:  .5s;
             i {
                 color: white;
                 font-size: 25px;

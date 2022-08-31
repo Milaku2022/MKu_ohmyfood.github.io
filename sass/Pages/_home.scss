@@ -70,16 +70,31 @@
     &__étiquette{
        display: flex;
        justify-content: space-between;
+       position: relative;
        padding: 20px;
-       font-size: 23px;    
+       font-size: 23px; 
+      
     }
     &__étiquette-jaime{
-        font-size: 23px;  
-        color:rgba(128, 128, 128, 0.582);
-        :hover{
-            color: $color-primary;           
+        
+        i{
+            font-size: x-large;
+            position: absolute;
+            right: 2rem;
+            top: 30%;
+            
+        } 
+        .fa-regular{
+            opacity: 0;
         }
+        
+        &:hover{
+           
+           
+                    
+        
     }
+}
 }
 .nouveau{
     position:absolute;
@@ -87,6 +102,5 @@
     margin-top: 20px;
     margin-right: 20px;
     padding: 5px 10px 5px 10px;
-    background-color: rgb(162, 216, 198);
-     
+    background-color: rgb(162, 216, 198);     
 }
