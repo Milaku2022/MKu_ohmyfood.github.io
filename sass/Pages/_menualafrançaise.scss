@@ -1,16 +1,18 @@
-.header-menu{
+.header-menu-1{
     display: flex;
     padding: 20px 20px 20px 20px;
     &__return{
-        width: 30%;        
+        width: 20%;        
         font-size: 25px;
-        margin-left: 20px;
+    
         i{
             color:black;
         }
     }
     &__logo{
-        width: 70%;
+        width: 90%;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -32,8 +34,15 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 20px;
+           
+        
             &-nom{
+                width: 90%;
                 @include typo-logo(30px, black);
+                @media all and (min-width: 530px){
+                    text-align: center;
+                  }  
+               
             }
             i{
                 padding-top: 7px;
@@ -42,7 +51,7 @@
         &__h3{
             width: 50px;
             padding-bottom: 10px;
-            @include typo__title(20px, 300);
+            @include typo__title(18px, 300);
             border-bottom: 3px solid $color-tercio;
             margin-bottom: 20px;
             margin-top: 40px;
@@ -50,10 +59,29 @@
         }
         
     }
-
+.menu2{ 
+    @media all and (min-width: 1000px){
+       width: 30%;
+       
+      }  
+    
+}
 .commander{
     @include flexbox(flex, center, center);
     margin-top: 50px;
     margin-bottom: 50px;
     
+}
+
+.section{
+    
+    background-color: transparent;
+    @media all and (min-width: 1000px){
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+       
+      }  
+
+   
 }

@@ -19,7 +19,7 @@
   padding-bottom: 15px;
   padding-right: 0;
   padding-left: 0;
-  background-color: rgb(243, 235, 235);
+  background-color: #EAEAEA;
 }
 .form__icon {
   padding-right: 10px;
@@ -46,39 +46,41 @@
   color: white;
   border-radius: 30px;
   border: none;
-  box-shadow: 11px 5px 33px 1px rgba(0, 0, 0, 0.226);
+  box-shadow: 9px 3px 15px 1px rgba(0, 0, 0, 0.226);
   min-width: 200px;
+  transition: 0.3s;
 }
 .btn-calltoaction a {
   color: white;
 }
 .btn-calltoaction:hover {
   background: linear-gradient(rgba(146, 86, 220, 0.5725490196), rgba(255, 121, 217, 0.5568627451));
-  box-shadow: 11px 5px 33px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 9px 3px 15px 1px rgba(0, 0, 0, 0.5);
 }
 
 .fonction__bouttons {
   display: flex;
   align-items: center;
   text-decoration: none;
-  margin-bottom: 20px;
   position: relative;
   width: 100%;
 }
 
 .btn-choix {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 20px 20px 20px 40px;
   border-radius: 25px;
+  margin: 10px;
   flex: 1;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: black;
   border: none;
-  box-shadow: 11px 5px 33px 1px rgba(0, 0, 0, 0.226);
+  box-shadow: 9px 3px 15px 1px rgba(0, 0, 0, 0.226);
+  transition: 0.3s;
 }
 .btn-choix__icon {
   margin-right: 15px;
@@ -86,23 +88,90 @@
 }
 .btn-choix:hover {
   background-color: rgba(146, 86, 220, 0.1803921569);
-  box-shadow: 11px 5px 33px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 9px 3px 15px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
 }
 .btn-choix:hover i {
   color: #9356DC;
 }
 
 .BouttonMenu {
-  width: 350px;
+  width: 100%;
   display: flex;
   margin-bottom: 20px;
   border-radius: 20px;
-  box-shadow: 11px 5px 33px 1px rgba(0, 0, 0, 0.226);
+  box-shadow: 9px 3px 15px 1px rgba(0, 0, 0, 0.226);
   overflow: hidden;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-name: slowly;
           animation-name: slowly;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.BouttonMenu-2 {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slowly;
+          animation-name: slowly;
+  -webkit-animation-delay: 1250ms;
+          animation-delay: 1250ms;
+}
+.BouttonMenu-3 {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slowly;
+          animation-name: slowly;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+}
+.BouttonMenu-4 {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slowly;
+          animation-name: slowly;
+  -webkit-animation-delay: 1750ms;
+          animation-delay: 1750ms;
+}
+.BouttonMenu-5 {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slowly;
+          animation-name: slowly;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+}
+.BouttonMenu-6 {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slowly;
+          animation-name: slowly;
+  -webkit-animation-delay: 2250ms;
+          animation-delay: 2250ms;
+}
+.BouttonMenu-7 {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slowly;
+          animation-name: slowly;
+  -webkit-animation-delay: 2500ms;
+          animation-delay: 2500ms;
+}
+.BouttonMenu-9 {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slowly;
+          animation-name: slowly;
+  -webkit-animation-delay: 2750ms;
+          animation-delay: 2750ms;
+}
+.BouttonMenu-10 {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slowly;
+          animation-name: slowly;
+  -webkit-animation-delay: 3000ms;
+          animation-delay: 3000ms;
 }
 .BouttonMenu .btnmenu {
   padding: 10px;
@@ -169,6 +238,13 @@
   background-color: black;
   padding: 20px;
 }
+@media all and (min-width: 780px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .footer__logo {
   font-family: "Shrikhand", cursive;
   font-size: 20px;
@@ -202,6 +278,15 @@
   color: white;
 }
 
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: -1px 14px 9px 2px rgba(0, 0, 0, 0.88);
+}
+
 .resa {
   text-align: center;
   background-color: rgb(247, 245, 245);
@@ -232,6 +317,11 @@
   padding-right: 15px;
   padding-left: 15px;
 }
+@media all and (min-width: 780px) {
+  .fonction__section {
+    display: flex;
+  }
+}
 
 .fonction__bouttons__numero {
   display: flex;
@@ -252,6 +342,12 @@
 .Restaurants {
   background-color: rgb(247, 245, 245);
 }
+@media all and (min-width: 780px) {
+  .Restaurants__section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .cardresto {
   display: flex;
@@ -259,8 +355,9 @@
   margin: auto;
   margin-bottom: 30px;
   width: 100%;
+  max-width: 500px;
   border-radius: 20px;
-  box-shadow: 11px 5px 33px 1px rgba(0, 0, 0, 0.226);
+  box-shadow: 9px 3px 15px 1px rgba(0, 0, 0, 0.226);
 }
 .cardresto__photo {
   display: flex;
@@ -269,7 +366,7 @@
   justify-content: end;
 }
 .cardresto:hover {
-  box-shadow: 11px 5px 33px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 9px 3px 15px 1px rgba(0, 0, 0, 0.5);
 }
 .cardresto img {
   width: 100%;
@@ -298,15 +395,31 @@
   padding: 20px;
   font-size: 23px;
 }
-.cardresto__étiquette-jaime i {
-  font-size: x-large;
+
+.car {
+  width: 23.5px;
+  display: flex;
+  position: relative;
+  transition: 0.3s;
+}
+.car .svg1 {
   position: absolute;
-  right: 2rem;
-  top: 30%;
 }
-.cardresto__étiquette-jaime .fa-regular {
-  opacity: 0;
+.car .svg2 {
+  position: absolute;
+  display: none;
 }
+.car:hover {
+  transition: 0.3s;
+}
+.car:hover .svg1 {
+  display: none;
+  padding: 0;
+}
+.car:hover .svg2 {
+  display: block;
+}
+
 .nouveau {
   position: absolute;
   font-family: "Roboto", sans-serif;
@@ -319,20 +432,21 @@
   background-color: rgb(162, 216, 198);
 }
 
-.header-menu {
+.header-menu-1 {
   display: flex;
   padding: 20px 20px 20px 20px;
 }
-.header-menu__return {
-  width: 30%;
+.header-menu-1__return {
+  width: 20%;
   font-size: 25px;
-  margin-left: 20px;
 }
-.header-menu__return i {
+.header-menu-1__return i {
   color: black;
 }
-.header-menu__logo {
-  width: 70%;
+.header-menu-1__logo {
+  width: 90%;
+  display: flex;
+  justify-content: center;
 }
 
 .photo {
@@ -358,9 +472,15 @@
   margin-bottom: 20px;
 }
 .photo .menu__title-nom {
+  width: 90%;
   font-family: "Shrikhand", cursive;
   font-size: 30px;
   color: black;
+}
+@media all and (min-width: 530px) {
+  .photo .menu__title-nom {
+    text-align: center;
+  }
 }
 .photo .menu__title i {
   padding-top: 7px;
@@ -369,11 +489,17 @@
   width: 50px;
   padding-bottom: 10px;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   border-bottom: 3px solid #99E2D0;
   margin-bottom: 20px;
   margin-top: 40px;
+}
+
+@media all and (min-width: 1000px) {
+  .menu2 {
+    width: 30%;
+  }
 }
 
 .commander {
@@ -384,13 +510,14 @@
   margin-bottom: 50px;
 }
 
-@-webkit-keyframes slowly {
-  from {
-    opacity: 0%;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 100%;
+.section {
+  background-color: transparent;
+}
+@media all and (min-width: 1000px) {
+  .section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -403,6 +530,75 @@
     opacity: 100%;
   }
 }
+@-webkit-keyframes slowly {
+  from {
+    -webkit-opacity: 0%;
+    -webkit-transform: translateY(10px);
+  }
+  to {
+    -webkit-opacity: 100%;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loading {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes loading {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+.chargement {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #9356DC;
+  border-bottom: 6px solid #FF79DA;
+  border-right: 6px solid #99E2D0;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+.loadingspinner {
+  background-color: rgb(236, 240, 241);
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: loading 3s;
+          animation: loading 3s;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

@@ -1,3 +1,6 @@
+
+//  animation bouttonsMenus qui arrivent
+
 @keyframes slowly{
         from{
                  opacity: 0%;
@@ -6,5 +9,46 @@
         to{
                 opacity: 100%;
                 
+        }
+}
+@-webkit-keyframes slowly{
+        from{
+                 -webkit-opacity: 0%;
+                 -webkit-transform: translateY(10px);
+        }
+        to{
+                -webkit-opacity: 100%;
+                
+        }
+}
+
+
+//  animation loading spinner
+
+
+@keyframes spin {
+        0%{
+                transform: rotate(0deg);
+        }
+        100%{
+                transform: rotate(360deg);
+        }
+}
+@-webkit-keyframes spin {
+        0%{
+                -webkit-transform: rotate(0deg);
+        }
+        100%{
+                -webkit-transform: rotate(360deg);
+        }
+}
+
+
+@keyframes loading {
+        0%{
+                opacity:100%;
+        }
+        100%{
+                opacity: 0%;
         }
 }

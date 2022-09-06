@@ -6,6 +6,7 @@
     border: none;
     box-shadow: $box-shadow;
     min-width: 200px;
+    transition: $transition;
 
     a {
         color: white;
@@ -14,6 +15,7 @@
     &:hover {
         background: $background-hover;
         box-shadow: $box-shadow-hover;
+        
     }
 
 }
@@ -22,21 +24,21 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    margin-bottom: 20px;
     position: relative;
     width: 100%;
 }
 
 
 .btn-choix {
-    @include flexbox(flex, center, center);
+    @include flexbox(flex, space-around, center);
     padding: 20px 20px 20px 40px;
     border-radius: 25px;
-    // width: 100%;
+    margin: 10px;
     flex: 1;
     @include typo-buttons(18px, 700, black);
     border: none;
     box-shadow: $box-shadow;
+    transition: $transition;
 
     &__icon {
         margin-right: 15px;
@@ -46,6 +48,7 @@
     &:hover {
         background-color: $color-hover;
         box-shadow: $box-shadow-hover;
+        transition: $transition;
 
         i {
             color: $color-primary;
@@ -55,15 +58,39 @@
 
 // boutons des menus//
 .BouttonMenu {
-    width: 350px;
+  
+    width: 100%;
     display: flex;
     margin-bottom: 20px;
-    // background-color: black;
-    border-radius: 20px;
+       border-radius: 20px;
         box-shadow: $box-shadow;
         overflow: hidden;
-        animation-duration: 3s;
-        animation-name: slowly;   
+      
+        @include animationboutonmenu(1s);   
+    &-2{
+        @include animationboutonmenu(1250ms);
+    }
+    &-3{
+        @include animationboutonmenu(1500ms);
+    }
+    &-4{
+        @include animationboutonmenu(1750ms);
+    }
+    &-5{
+        @include animationboutonmenu(2000ms);
+    }
+    &-6{
+        @include animationboutonmenu(2250ms);
+    }
+    &-7{
+        @include animationboutonmenu(2500ms);
+    }
+    &-9{
+        @include animationboutonmenu(2750ms);
+    }
+    &-10{
+        @include animationboutonmenu(3000ms);
+    }
 
     .btnmenu {
         padding: 10px;

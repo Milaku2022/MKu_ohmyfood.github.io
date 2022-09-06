@@ -1,7 +1,8 @@
 .form{
     @include flexbox(flex, center, center);
     @include padding(15px, 15px, 0, 0);
-    background-color: rgb(243, 235, 235);
+    background-color: #EAEAEA;
+
     &__icon {
         padding-right: 10px;
     }

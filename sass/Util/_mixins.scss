@@ -28,3 +28,9 @@
     font-size: $font-size;
     color: $color;
 }
+
+@mixin animationboutonmenu($animation-delay){
+        animation-duration: 3s;
+        animation-name: slowly;
+        animation-delay: $animation-delay;   
+}
