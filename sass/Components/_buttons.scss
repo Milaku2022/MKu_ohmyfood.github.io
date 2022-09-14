@@ -64,32 +64,51 @@
     margin-bottom: 20px;
        border-radius: 20px;
         box-shadow: $box-shadow;
-        overflow: hidden;
-      
-        @include animationboutonmenu(1s);   
+        overflow: hidden; 
+        animation: slowly 1.2s both;     
+        
+    &-1{
+        // @include animationboutonmenu(0s); 
+        animation-delay:0.1s;
+    }      
     &-2{
-        @include animationboutonmenu(1250ms);
+            // @include animationboutonmenu(1s);
+            animation-delay:0.2s;
+
     }
     &-3{
-        @include animationboutonmenu(1500ms);
+            // @include animationboutonmenu(1250ms);
+
+            animation-delay:0.3s;
     }
     &-4{
-        @include animationboutonmenu(1750ms);
+            // @include animationboutonmenu(1500ms);
+            animation-delay:0.4s;
     }
     &-5{
-        @include animationboutonmenu(2000ms);
+            // @include animationboutonmenu(1750ms);
+            animation-delay:0.5s;
     }
     &-6{
-        @include animationboutonmenu(2250ms);
+            // @include animationboutonmenu(2000ms);
+            animation-delay:0.6s;
     }
     &-7{
-        @include animationboutonmenu(2500ms);
+            // @include animationboutonmenu(2250ms);
+            animation-delay:0.7s;
     }
+    &-8{
+            // @include animationboutonmenu(2500ms);
+            animation-delay:0.8s;
+    }
+
     &-9{
-        @include animationboutonmenu(2750ms);
+            // @include animationboutonmenu(2750ms);
+            animation-delay:0.9s;
     }
     &-10{
-        @include animationboutonmenu(3000ms);
+            // @include animationboutonmenu(3000ms);
+            animation-delay:1s;
     }
 
     .btnmenu {

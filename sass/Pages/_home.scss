@@ -108,16 +108,9 @@
 .car{
     width: 23.5px;
    display:flex;
-   position:relative;
    transition: $transition;
- 
-  
-   .svg1{
-    position:absolute;
-  
-   }
    .svg2{
-    position: absolute;
+   
     display:none;
    }
    &:hover{

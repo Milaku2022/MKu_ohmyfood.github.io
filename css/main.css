@@ -102,76 +102,48 @@
   border-radius: 20px;
   box-shadow: 9px 3px 15px 1px rgba(0, 0, 0, 0.226);
   overflow: hidden;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slowly;
-          animation-name: slowly;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation: slowly 1.2s both;
+          animation: slowly 1.2s both;
+}
+.BouttonMenu-1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 .BouttonMenu-2 {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slowly;
-          animation-name: slowly;
-  -webkit-animation-delay: 1250ms;
-          animation-delay: 1250ms;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 .BouttonMenu-3 {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slowly;
-          animation-name: slowly;
-  -webkit-animation-delay: 1500ms;
-          animation-delay: 1500ms;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 .BouttonMenu-4 {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slowly;
-          animation-name: slowly;
-  -webkit-animation-delay: 1750ms;
-          animation-delay: 1750ms;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 .BouttonMenu-5 {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slowly;
-          animation-name: slowly;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 .BouttonMenu-6 {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slowly;
-          animation-name: slowly;
-  -webkit-animation-delay: 2250ms;
-          animation-delay: 2250ms;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 .BouttonMenu-7 {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slowly;
-          animation-name: slowly;
-  -webkit-animation-delay: 2500ms;
-          animation-delay: 2500ms;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+.BouttonMenu-8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 .BouttonMenu-9 {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slowly;
-          animation-name: slowly;
-  -webkit-animation-delay: 2750ms;
-          animation-delay: 2750ms;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 .BouttonMenu-10 {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-name: slowly;
-          animation-name: slowly;
-  -webkit-animation-delay: 3000ms;
-          animation-delay: 3000ms;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 .BouttonMenu .btnmenu {
   padding: 10px;
@@ -399,14 +371,9 @@
 .car {
   width: 23.5px;
   display: flex;
-  position: relative;
   transition: 0.3s;
 }
-.car .svg1 {
-  position: absolute;
-}
 .car .svg2 {
-  position: absolute;
   display: none;
 }
 .car:hover {
@@ -528,6 +495,7 @@
   }
   to {
     opacity: 100%;
+    transform: translateY(0);
   }
 }
 @-webkit-keyframes slowly {
@@ -558,6 +526,7 @@
 @-webkit-keyframes loading {
   0% {
     opacity: 100%;
+    visibility: visible;
   }
   100% {
     opacity: 0%;
@@ -566,6 +535,7 @@
 @keyframes loading {
   0% {
     opacity: 100%;
+    visibility: visible;
   }
   100% {
     opacity: 0%;
@@ -597,6 +567,7 @@
   height: 100%;
   -webkit-animation: loading 3s;
           animation: loading 3s;
+  visibility: hidden;
 }
 
 * {

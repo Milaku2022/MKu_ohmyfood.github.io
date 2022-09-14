@@ -8,6 +8,7 @@
         }
         to{
                 opacity: 100%;
+                transform: translateY(0);
                 
         }
 }
@@ -25,7 +26,7 @@
 
 //  animation loading spinner
 
-
+// rotation de la roue 
 @keyframes spin {
         0%{
                 transform: rotate(0deg);
@@ -43,12 +44,14 @@
         }
 }
 
-
+// disparition du loading spinner
 @keyframes loading {
         0%{
                 opacity:100%;
+                visibility: visible;
         }
         100%{
                 opacity: 0%;
         }
+
 }
