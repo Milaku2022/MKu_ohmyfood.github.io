@@ -23,7 +23,6 @@
 .fonction__bouttons {
     display: flex;
     align-items: center;
-    text-decoration: none;
     position: relative;
     width: 100%;
 }
@@ -33,7 +32,7 @@
     @include flexbox(flex, space-around, center);
     padding: 20px 20px 20px 40px;
     border-radius: 25px;
-    margin: 10px;
+    margin: 20px;
     flex: 1;
     @include typo-buttons(18px, 700, black);
     border: none;
@@ -41,7 +40,7 @@
     transition: $transition;
 
     &__icon {
-        margin-right: 15px;
+        margin-right: 10px;
         color: grey;
     }
 
@@ -115,72 +114,52 @@
         padding: 10px;
         flex: 1;
         width: 80%;
-
-
-       
-
-
+        white-space: nowrap;
+        overflow: hidden;
         &__title {
             @include typo__title(20px, 700);
-            margin-bottom: 10px;
+            margin-bottom: 10px;           
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 1;
         }
         p{ white-space: nowrap;
             overflow: hidden;
-           
-           
-
         }
         &__ingrédients {
             display: flex;
-            justify-content: space-between;
-            
-            
+            justify-content: space-between;                
         }
-
         &__ingrédients-noms {
             @include typo__title(17px, 300);
             -webkit-line-clamp: 1;
-            text-overflow: ellipsis;
-           
-           
+            text-overflow: ellipsis;           
         }
 
         &__ingrédients-prix {
             @include typo__title(17px, 600)
         }
     }
-
-
     .btnCheck {
-        display: flex;
-    
+        display: flex;    
         background-color: $color-tercio;
         transition:  .5s;
-        border-radius: 0 20px 20px 0;
-    
-    width: 80px;
-    align-items: center;
-    justify-content: center;
-    margin-right: -80px;
-        
+        border-radius: 0 20px 20px 0;    
+        width: 80px;
+        align-items: center;
+        justify-content: center;
+        margin-right: -80px;        
         i{
             font-size: 0px;
         }
     }
-
     &:hover {
-        .btnmenu {
-           
+        .btnmenu {           
             border-radius: 20px 0 0 20px;
         }
-
-        .btnCheck {
-            
-            border-radius: 0 20px 20px 0;
-            
-           
+        .btnCheck {            
+            border-radius: 0 20px 20px 0;          
             text-align: center;
-           margin-right: 0;
+            margin-right: 0;
             font-size: large;
             transition:  .5s;
             i {
@@ -191,7 +170,4 @@
             }
         }
     }
-
-
-
 }

@@ -2,9 +2,8 @@
     display: flex;
     padding: 20px 20px 20px 20px;
     &__return{
-        width: 20%;        
-        font-size: 25px;
-    
+        width: 5%;        
+        font-size: 25px;    
         i{
             color:black;
         }
@@ -15,14 +14,16 @@
         justify-content: center;
     }
 }
-
 .photo{ 
     display:flex;
     flex-direction: column;
-    width: 100%;    
+    width: 100%;
     img{
-        width: 100%;
+        width: 100%;        
         object-fit: cover;
+        @media all and (min-width: 780px){
+            height: 550px;
+        }
     }
     .menu{
         margin-top: -40px;
@@ -33,16 +34,13 @@
         &__title{
             display: flex;
             justify-content: space-between;
-            margin-bottom: 20px;
-           
-        
+            margin-bottom: 20px;    
             &-nom{
-                width: 90%;
+                width: 100%;
                 @include typo-logo(30px, black);
                 @media all and (min-width: 530px){
                     text-align: center;
-                  }  
-               
+                  }                
             }
             i{
                 padding-top: 7px;

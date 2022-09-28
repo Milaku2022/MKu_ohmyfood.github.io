@@ -31,13 +31,10 @@
    &__section{
     @media all and (min-width: 780px){
         display: flex;
-       
-    }
-   
+           
+    }   
    }
-
 }
-
 .fonction__bouttons__numero{
     @include flexbox(flex, center, center);
     @include typo-buttons(20px, 400, white);
@@ -46,10 +43,7 @@
     height: 30px;
     border-radius: 50%;
     position: absolute;
-    left: -1%;
-   
-   
-    
+    left: -1%;    
 }
 .Restaurants{
     background-color: $background-color-fond-gris;
@@ -110,15 +104,15 @@
    display:flex;
    transition: $transition;
    .svg2{
-   
     display:none;
+   
    }
    &:hover{
     .svg1{
        display: none;
        padding: 0;
        }
-       .svg2{
+    .svg2{
       
         display:block;
        }
