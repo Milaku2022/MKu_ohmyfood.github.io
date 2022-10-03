@@ -39,7 +39,7 @@
 
 .btn-calltoaction {
   background: linear-gradient(#FF79DA, #9356DC);
-  padding: 15px 20px 15px 20px;
+  padding: 15px 20px;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -190,7 +190,7 @@
   margin-right: -80px;
 }
 .BouttonMenu .btnCheck i {
-  font-size: 0px;
+  font-size: 0;
 }
 .BouttonMenu:hover .btnmenu {
   border-radius: 20px 0 0 20px;
@@ -321,18 +321,23 @@
   .Restaurants__section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
 .cardresto {
   display: flex;
   flex-direction: column;
-  margin: auto;
-  margin-bottom: 30px;
+  margin: auto auto 30px;
   width: 100%;
   max-width: 500px;
   border-radius: 20px;
   box-shadow: 9px 3px 15px 1px rgba(0, 0, 0, 0.226);
+}
+@media all and (min-width: 780px) {
+  .cardresto {
+    margin: 30px;
+  }
 }
 .cardresto__photo {
   display: flex;
@@ -379,6 +384,11 @@
 .car .svg2 {
   display: none;
 }
+.car .svg2 img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+}
 .car:hover {
   transition: 0.3s;
 }
@@ -398,7 +408,7 @@
   color: rgb(16, 131, 87);
   margin-top: 20px;
   margin-right: 20px;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 10px;
   background-color: rgb(162, 216, 198);
 }
 
@@ -498,7 +508,7 @@
 
 @keyframes slowly {
   from {
-    opacity: 0%;
+    opacity: 0;
     transform: translateY(10px);
   }
   to {
@@ -508,7 +518,7 @@
 }
 @-webkit-keyframes slowly {
   from {
-    -webkit-opacity: 0%;
+    -webkit-opacity: 0;
     -webkit-transform: translateY(10px);
   }
   to {
@@ -537,7 +547,7 @@
     visibility: visible;
   }
   100% {
-    opacity: 0%;
+    opacity: 0;
   }
 }
 @keyframes loading {
@@ -546,7 +556,7 @@
     visibility: visible;
   }
   100% {
-    opacity: 0%;
+    opacity: 0;
   }
 }
 .chargement {

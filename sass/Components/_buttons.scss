@@ -1,6 +1,6 @@
 .btn-calltoaction {
     background: linear-gradient($color-secondary, $color-primary);
-    padding: 15px 20px 15px 20px;
+    padding: 15px 20px;
     @include typo-buttons(18px, 500, white);
     border-radius: 30px;
     border: none;
@@ -15,7 +15,7 @@
     &:hover {
         background: $background-hover;
         box-shadow: $box-shadow-hover;
-        
+
     }
 
 }
@@ -57,57 +57,57 @@
 
 // boutons des menus//
 .BouttonMenu {
-  
+
     width: 100%;
     display: flex;
     margin-bottom: 20px;
-       border-radius: 20px;
-        box-shadow: $box-shadow;
-        overflow: hidden; 
-        animation: slowly 1.2s both;     
-        
-    &-1{
-        // @include animationboutonmenu(0s); 
-        animation-delay:0.1s;
-    }      
-    &-2{
-            // @include animationboutonmenu(1s);
-            animation-delay:0.2s;
+    border-radius: 20px;
+    box-shadow: $box-shadow;
+    overflow: hidden;
+    animation: slowly 1.2s both;
+
+    &-1 {
+        // @include animationboutonmenu(0s);
+        animation-delay: 0.1s;
+    }
+    &-2 {
+        // @include animationboutonmenu(1s);
+        animation-delay: 0.2s;
 
     }
-    &-3{
-            // @include animationboutonmenu(1250ms);
+    &-3 {
+        // @include animationboutonmenu(1250ms);
 
-            animation-delay:0.3s;
+        animation-delay: 0.3s;
     }
-    &-4{
-            // @include animationboutonmenu(1500ms);
-            animation-delay:0.4s;
+    &-4 {
+        // @include animationboutonmenu(1500ms);
+        animation-delay: 0.4s;
     }
-    &-5{
-            // @include animationboutonmenu(1750ms);
-            animation-delay:0.5s;
+    &-5 {
+        // @include animationboutonmenu(1750ms);
+        animation-delay: 0.5s;
     }
-    &-6{
-            // @include animationboutonmenu(2000ms);
-            animation-delay:0.6s;
+    &-6 {
+        // @include animationboutonmenu(2000ms);
+        animation-delay: 0.6s;
     }
-    &-7{
-            // @include animationboutonmenu(2250ms);
-            animation-delay:0.7s;
+    &-7 {
+        // @include animationboutonmenu(2250ms);
+        animation-delay: 0.7s;
     }
-    &-8{
-            // @include animationboutonmenu(2500ms);
-            animation-delay:0.8s;
+    &-8 {
+        // @include animationboutonmenu(2500ms);
+        animation-delay: 0.8s;
     }
 
-    &-9{
-            // @include animationboutonmenu(2750ms);
-            animation-delay:0.9s;
+    &-9 {
+        // @include animationboutonmenu(2750ms);
+        animation-delay: 0.9s;
     }
-    &-10{
-            // @include animationboutonmenu(3000ms);
-            animation-delay:1s;
+    &-10 {
+        // @include animationboutonmenu(3000ms);
+        animation-delay: 1s;
     }
 
     .btnmenu {
@@ -118,50 +118,50 @@
         overflow: hidden;
         &__title {
             @include typo__title(20px, 700);
-            margin-bottom: 10px;           
+            margin-bottom: 10px;
             text-overflow: ellipsis;
             -webkit-line-clamp: 1;
         }
-        p{ white-space: nowrap;
+        p {
+            white-space: nowrap;
             overflow: hidden;
         }
         &__ingrédients {
             display: flex;
-            justify-content: space-between;                
+            justify-content: space-between;
         }
         &__ingrédients-noms {
             @include typo__title(17px, 300);
             -webkit-line-clamp: 1;
-            text-overflow: ellipsis;           
+            text-overflow: ellipsis;
         }
 
         &__ingrédients-prix {
-            @include typo__title(17px, 600)
-        }
+            @include typo__title(17px, 600)}
     }
     .btnCheck {
-        display: flex;    
+        display: flex;
         background-color: $color-tercio;
-        transition:  .5s;
-        border-radius: 0 20px 20px 0;    
+        transition: 0.5s;
+        border-radius: 0 20px 20px 0;
         width: 80px;
         align-items: center;
         justify-content: center;
-        margin-right: -80px;        
-        i{
-            font-size: 0px;
+        margin-right: -80px;
+        i {
+            font-size: 0;
         }
     }
     &:hover {
-        .btnmenu {           
+        .btnmenu {
             border-radius: 20px 0 0 20px;
         }
-        .btnCheck {            
-            border-radius: 0 20px 20px 0;          
+        .btnCheck {
+            border-radius: 0 20px 20px 0;
             text-align: center;
             margin-right: 0;
             font-size: large;
-            transition:  .5s;
+            transition: 0.5s;
             i {
                 color: white;
                 font-size: 25px;

@@ -1,41 +1,40 @@
-
-.header-menu{
-    @include flexbox(flex,center,center);
+.header-menu {
+    @include flexbox(flex, center, center);
     padding-top: 20px;
     padding-bottom: 20px;
     box-shadow: -1px 14px 9px 2px rgba(0, 0, 0, 0.88);
-   
-    }
+
+}
 
 
 .resa {
     text-align: center;
     background-color: rgb(247, 245, 245);
-    @include padding(30px, 30px,40px , 40px);
-    &__title{
+    @include padding(30px, 30px, 40px , 40px);
+    &__title {
         @include typo__title(25px, 900);
         margin-bottom: 20px;
     }
-    &__slogan{
+    &__slogan {
         @include typo__title(20px, 300);
         margin-bottom: 40px;
-    }     
-    a{
-        color:white;
     }
-   
+    a {
+        color: white;
+    }
+
 }
 
-.fonction{
+.fonction {
     @include padding(40px, 40px, 15px, 15px);
-   &__section{
-    @media all and (min-width: 780px){
-        display: flex;
-           
-    }   
-   }
+    &__section {
+        @media all and(min-width: 780px) {
+            display: flex;
+
+        }
+    }
 }
-.fonction__bouttons__numero{
+.fonction__bouttons__numero {
     @include flexbox(flex, center, center);
     @include typo-buttons(20px, 400, white);
     background-color: $color-primary;
@@ -43,87 +42,89 @@
     height: 30px;
     border-radius: 50%;
     position: absolute;
-    left: -1%;    
+    left: -1%;
 }
-.Restaurants{
+.Restaurants {
     background-color: $background-color-fond-gris;
-    &__section{
-        @media all and (min-width: 780px){
+    &__section {
+        @media all and(min-width: 780px) {
             display: flex;
             flex-wrap: wrap;
-         }  
+            justify-content: space-around;
+        }
     }
 }
-.cardresto{
-    display:flex;
+.cardresto {
+    display: flex;
     flex-direction: column;
-    margin: auto;
-    margin-bottom: 30px;
-    width: 100%;  
-    max-width:500px;  
+    margin: auto auto 30px;
+    width: 100%;
+    max-width: 500px;
     border-radius: 20px;
     box-shadow: $box-shadow;
-   
-    &__photo{
+    @media all and(min-width: 780px) {
+       margin: 30px;      
+    }
+    &__photo {
         display: flex;
         position: relative;
         align-items: flex-start;
         justify-content: end;
     }
-    &:hover{
+    &:hover {
         box-shadow: $box-shadow-hover;
     }
-    img{
+    img {
         width: 100%;
         height: 180px;
-        object-fit:cover;        
+        object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-    }    
-    &__title{
-        @include typo-buttons(18px, 900, black)
-    } 
-    &__lieu{
+    }
+    &__title {
+        @include typo-buttons(18px, 900, black)}
+    &__lieu {
         @include typo-buttons(18px, 300, black);
     }
-    &__étiquette{
-       display: flex;
-       justify-content: space-between;
-       position: relative;
-       padding: 20px;
-       font-size: 23px; 
-      
+    &__étiquette {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 20px;
+        font-size: 23px;
+
     }
-   
-        
-        
+
+
 }
 // les coeurs
-.car{
+.car {
     width: 23.5px;
-   display:flex;
-   transition: $transition;
-   .svg2{
-    display:none;
-   
-   }
-   &:hover{
-    .svg1{
-       display: none;
-       padding: 0;
-       }
-    .svg2{
-      
-        display:block;
-       }
-       transition: $transition;
-   }
+    display: flex;
+    transition: $transition;
+    .svg2 {
+        display: none;
+        img {
+            object-fit: contain;
+            height: 100%;
+        }
+    }
+    &:hover {
+        .svg1 {
+            display: none;
+            padding: 0;
+        }
+        .svg2 {
+            display: block;
+        }
+        transition: $transition;
+    }
 }
-.nouveau{
-    position:absolute;
+.nouveau {
+    position: absolute;
     @include typo-buttons(13px, 700, rgb(16, 131, 87));
     margin-top: 20px;
     margin-right: 20px;
-    padding: 5px 10px 5px 10px;
-    background-color: rgb(162, 216, 198);     
+    padding: 5px 10px;
+    background-color: rgb(162, 216, 198);
 }
