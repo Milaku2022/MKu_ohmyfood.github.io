@@ -46,12 +46,15 @@
 }
 .Restaurants {
     background-color: $background-color-fond-gris;
+    @media all and(min-width: 780px) {
+        min-height: 600px;
+       }
     &__section {
         @media all and(min-width: 780px) {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-        }
+           }
     }
 }
 .cardresto {
@@ -102,6 +105,12 @@
     width: 23.5px;
     display: flex;
     transition: $transition;
+    .svg1{
+        img{
+            object-fit: contain;
+            height: 100%;
+        }
+    }
     .svg2 {
         display: none;
         img {

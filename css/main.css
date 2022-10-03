@@ -318,6 +318,11 @@
   background-color: rgb(247, 245, 245);
 }
 @media all and (min-width: 780px) {
+  .Restaurants {
+    min-height: 600px;
+  }
+}
+@media all and (min-width: 780px) {
   .Restaurants__section {
     display: flex;
     flex-wrap: wrap;
@@ -380,6 +385,11 @@
   width: 23.5px;
   display: flex;
   transition: 0.3s;
+}
+.car .svg1 img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
 }
 .car .svg2 {
   display: none;
